@@ -25,6 +25,37 @@ body {
   height: 100%;
   z-index: 0;
 }
+/* Dropdown hidden by default */
+#contactDropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown when visible */
+#contactDropdown.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/* Dropdown icons hover effect */
+#contactDropdown a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#contactDropdown a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
 
 .content {
   position: relative;
