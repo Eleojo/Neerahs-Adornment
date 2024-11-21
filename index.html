@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Perfume Business</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- <style>
+      html {
+        scroll-behavior: smooth; /* Smooth scrolling */
+      }
+      body {
+        background: #8b3a70;
+        background-size: cover;
+        color: white;
+        font-family: "Arial", sans-serif;
+      }
+      .logo {
+        width: 100px; /* Set a fixed width for the logo */
+        margin-bottom: 20px;
+      }
+
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+      .content {
+        position: relative;
+        z-index: 10;
+      }
+      .card {
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+        height: 400px;
+        border-radius: 10px;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      }
+      .card img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        transition: transform 0.3s ease;
+      }
+      .card:hover img {
+        transform: scale(1.1);
+      }
+      .card-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.25rem;
+        font-weight: bold;
+
+        /* Parallax effect and smooth transitions */
+        @keyframes slideReviews {
+          0% {
+            transform: translateY(50px) scale(0.8);
+            opacity: 0;
+          }
+          50% {
+            transform: translateY(0) scale(1.05);
+            opacity: 0.7;
+          }
+          100% {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+          }
+        }
+
+        /* Reviews Slider Container */
+        .review-slider {
+          display: flex;
+          flex-wrap: nowrap;
+          animation: slideReviews 1.5s ease-in-out infinite;
+          animation-delay: 1s; /* Delay to stagger */
+        }
+
+        /* Individual Review Cards */
+        .review-item {
+          min-width: 300px;
+          margin-right: 20px;
+          opacity: 0;
+          animation: fadeInUp 3s ease-out forwards;
+          transform: scale(0.95);
+        }
+
+        /* Fade-in and slide-up effect for each review */
+        @keyframes fadeInUp {
+          0% {
+            transform: translateY(50px) scale(0.95);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+          }
+        }
+        .review-item:hover {
+          transform: scale(1.05);
+          transition: transform 0.3s ease;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="content">
+      <!-- Hero Section -->
+      <header
+        class="h-screen flex flex-col justify-center items-center text-center px-4 md:px-0"
+      >
+        <!-- Logo -->
+        <img
+          src="images/Bg_Image.jpg"
+          alt="Your Perfume Business Logo"
+          class="logo w-32 md:w-48 mb-6"
+        />
+        <!-- Responsive logo size -->
+
+        <!-- Main Title -->
+        <h1
+          class="text-4xl sm:text-5xl md:text-7xl font-bold uppercase tracking-wide"
+        >
+          Your Luxury Perfume
+        </h1>
+
+        <!-- Description -->
+        <p class="mt-4 text-base sm:text-lg md:text-xl">
+          Experience the Art of Fragrance right here in Unilag
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-6 flex flex-wrap justify-center gap-4">
+          <a
+            href="#Contact us"
+            class="px-6 py-3 bg-yellow-500 text-black font-medium rounded-lg hover:bg-yellow-400 transition"
+          >
+            Contact Us
+          </a>
+          <a
+            href="#about"
+            class="px-6 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition"
+          >
+            Discover More
+          </a>
+          <a
+            href="#reviews"
+            class="px-6 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition"
+          >
+            Customer Reviews
+          </a>
+        </div>
+      </header>
+
+      <!-- About Section -->
+      <section id="about" class="py-16 text-center bg-black bg-opacity-75">
+        <h2 class="text-3xl md:text-4xl font-bold uppercase">About Us</h2>
+        <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl">
+          We craft exquisite fragrances that capture the essence of luxury and
+          sophistication.
+        </p>
+      </section>
+
+      <!-- Shop Section -->
+      <section
+        id="shop"
+        class="py-16 text-center bg-black bg-opacity-75"
+        style="background-image: url('images/Bg_Image.jpg')"
+      >
+        <h2 class="text-3xl md:text-4xl font-bold uppercase">Our Collection</h2>
+        <div
+          class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 max-w-7xl mx-auto"
+        >
+          <div class="card relative bg-gray-800">
+            <img src="images/Al Dirgham.jpg" alt="Al Dirgham" />
+            <div class="card-title">Al Dirgham</div>
+          </div>
+          <div class="card relative bg-gray-800">
+            <img src="images/Rave Now.jpg" alt="Rave Now" />
+            <div class="card-title">Rave Now</div>
+          </div>
+          <div class="card relative bg-gray-800">
+            <img
+              src="images/ChairWoman Perfume.jpg"
+              alt="ChairWoman Perfume"
+              class="rounded-md"
+            />
+            <div class="card-title">ChairWoman Perfume</div>
+          </div>
+          <div class="card relative bg-gray-800">
+            <img
+              src="images/Bayn Al Asrar.jpg"
+              alt="Bayn Al Asrar"
+              class="rounded-md"
+            />
+            <div class="card-title">Bayn Al Asrar</div>
+          </div>
+          <div class="card relative bg-gray-800">
+            <img
+              src="images/Kaly perfume.jpg"
+              alt="Kaly perfume"
+              class="rounded-md"
+            />
+            <div class="card-title">Kaly Perfume</div>
+          </div>
+          <div class="card relative bg-gray-800">
+            <img src="images/Ood Mood.jpg" alt="Ood Mood" class="rounded-md" />
+            <div class="card-title">Ood Mood</div>
+          </div>
+          <div class="card relative bg-gray-800">
+            <img src="images/Rahyan.jpg" alt="Rahyan" class="rounded-md" />
+            <div class="card-title">Rahyan</div>
+          </div>
+          <div class="card relative bg-gray-800">
+            <img
+              src="images/Ramz Latafa.jpg"
+              alt="Ramz Lattafa"
+              class="rounded-md"
+            />
+            <div class="card-title">Ramz Lattafa</div>
+          </div>
+          <div class="card relative bg-gray-800">
+            <img
+              src="images/Fakhar Lattafa.jpg"
+              alt="Fakhar Lattafa"
+              class="rounded-md"
+            />
+            <div class="card-title">Fakhar Lattafa</div>
+          </div>
+          <div class="card relative bg-gray-800">
+            <img
+              src="images/Monogotas Mist.jpg"
+              alt="Monogotas Mist"
+              class="rounded-md"
+            />
+            <div class="card-title">Monogotas Mist</div>
+          </div>
+          <!-- Add more products as needed -->
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section id="reviews" class="py-16 bg-black bg-opacity-75 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold uppercase text-white">
+          Customer Reviews
+        </h2>
+        <div class="mt-8 overflow-x-hidden max-w-6xl mx-auto px-4">
+          <!-- Review Cards Container -->
+          <div class="review-slider-wrapper">
+            <div class="review-slider">
+              <div class="review-item">
+                <img src="images/Review1.jpg" alt="Review 1" />
+                <div class="review-text">Arafat</div>
+              </div>
+              <div class="review-item">
+                <img src="images/Review2.jpg" alt="Review 2" />
+                <div class="review-text">Asmau</div>
+              </div>
+              <div class="review-item">
+                <img
+                  src="images/Review3.jpg"
+                  alt="Review 3"
+                  onError="console.error('Image failed to load:', this.src)"
+                />
+                <div class="review-text">Victoria</div>
+              </div>
+              <div class="review-item">
+                <img src="images/Review4.jpg" alt="Review 4" />
+                <div class="review-text">Blessing</div>
+              </div>
+              <div class="review-item">
+                <img src="images/Review5.jpg" alt="Review 5" />
+                <div class="review-text">Blessing</div>
+              </div>
+              <div class="review-item">
+                <img src="images/Review6.jpg" alt="Review 5" />
+                <div class="review-text">Amira</div>
+              </div>
+              <div class="review-item">
+                <img src="images/Review7.jpg" alt="Review 5" />
+                <div class="review-text">Ayomide</div>
+              </div>
+              <!-- Add more reviews as needed -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-8 text-center bg-black bg-opacity-75" id="Contact us">
+        <p>&copy; 2024 Neerah's Adornment. All Rights Reserved.</p>
+        <div class="mt-4 space-x-4">
+          <a href="#" class="text-white hover:text-yellow-500 transition"
+            >Instagram</a
+          >
+          <a href="#" class="text-white hover:text-yellow-500 transition"
+            >Facebook</a
+          >
+          <a href="#" class="text-white hover:text-yellow-500 transition"
+            >Twitter</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
