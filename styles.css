@@ -2,25 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Position the logo and business name */
-.top-right-logo-container {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: flex;
-  align-items: center;
-}
-
-.top-right-logo-container .logo {
-  width: 40px; /* Adjust the size of the logo */
-  height: 40px; /* Adjust the size of the logo */
-}
-
-.top-right-logo-container span {
-  margin-left: 8px;
-  font-size: 1.25rem; /* Adjust the font size for the business name */
-  color: white; /* Ensure the text is white */
-}
+ 
 
 body {
   background: #8b3a70;
